@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.2rem;
+  cursor: default;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+button,
+input,
+select {
+  border: none;
+  outline: none;
+  background: none;
+  padding: .5rem;
+  font-size: 1.2rem;
+}
+
+button,
+input,
+select,
+a {
+  cursor: pointer;
+}
