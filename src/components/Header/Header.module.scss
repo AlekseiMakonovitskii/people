@@ -1,5 +1,22 @@
 .header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	min-height: 70px;
 	background: lightblue;
 	
+
+	.searchBox {
+		display: flex;
+		width: 90%;
+		background: #fff;
+		max-width: 700px;
+		min-height: 50px;
+
+		.searchBox {
+			flex-grow: 1;
+		}
+
+
+	}
 }
