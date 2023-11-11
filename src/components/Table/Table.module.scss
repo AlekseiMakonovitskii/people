@@ -1,0 +1,46 @@
+.tableSection {
+	display: flex;
+	flex-direction: column;
+	max-width: 1400px;
+	width: 100%;
+	margin-inline: auto;
+	min-height: calc(100vh - 70px);
+	padding: 1rem;
+	overflow: hidden;
+}
+
+.table {
+	min-width: 100%;
+	background: whitesmoke;
+	border-radius: 1rem;
+	padding: .5rem 1rem;
+	flex-grow: 1;
+	
+
+  th {
+		text-align: left;
+	}	
+
+	tr:first-child td {
+			vertical-align: top;
+	}
+}
+
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: whitesmoke;
+	border-radius: 1rem;
+	min-height: 70px;
+	flex-shrink: 0;
+	min-width: 100%;
+	margin-top: 1rem;
+
+	.navElements {
+		min-height: 50px;
+		max-width: 300px;
+		background: white;
+		flex-grow: 1;
+	}
+}
