@@ -6,6 +6,7 @@
 
 body {
   font-size: 1.2rem;
+  cursor: default;
 }
 
 .app {
@@ -22,4 +23,11 @@ select {
   background: none;
   padding: .5rem;
   font-size: 1.2rem;
+}
+
+button,
+input,
+select,
+a {
+  cursor: pointer;
 }
