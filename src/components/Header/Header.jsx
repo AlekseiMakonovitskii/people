@@ -1,26 +1,30 @@
-import React, { useEffect, useState, useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import styles from './Header.module.scss'
 import { FiSearch } from 'react-icons/fi';
 import { AiOutlineClose } from 'react-icons/ai';
+import { useDispatch, useSelector } from 'react-redux';
+import { setValueAction, setCurrentCategoryAction} from '../../store';
 
 
 const Header = () => {
-	const [inputValue, setInputValue] = useState('');
-	const [currentCategory, setCurrentCategory] = useState('name')
+	const inputValue = useSelector(state => state.inputValueReducer.value);
+	const currentCategory = useSelector(state => state.currentCategoryReducer.category);
+	const dispatch = useDispatch();
 	const inputRef = useRef(null);
-
+	
 	// control input
 	const handleChange = (e) => {
-		setInputValue(e.target.value)
+		dispatch(setValueAction(e.target.value))
 	}
 
 	const clearInput = () => {
-		setInputValue('');
+		dispatch(setValueAction(''))
 	}
 
 	const handleCategory = (e) => {
-		setCurrentCategory(e.target.value);
+		dispatch(setCurrentCategoryAction(e.target.value))
 	}
+
 
 	useEffect(() => {
 		inputRef.current.focus();
