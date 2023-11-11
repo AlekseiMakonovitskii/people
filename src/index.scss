@@ -15,8 +15,10 @@ body {
 }
 
 button,
-input {
+input,
+select {
   border: none;
   outline: none;
   background: none;
+  padding: .5rem;
 }
