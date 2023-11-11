@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './Header.module.scss'
+import { FiSearch } from 'react-icons/fi';
 
 const Header = () => {
 	return (
@@ -14,7 +15,7 @@ const Header = () => {
 					<option value="">Status</option>
 				</select>
 				<input type="text" className={styles.search}/>
-				<button className={styles.searchBtn}>Search</button>
+				<button className={styles.searchBtn}><FiSearch/></button>
 			</div>
 		</section>
 	)
