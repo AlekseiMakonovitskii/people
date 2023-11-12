@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import Header from './components/Header/Header'
+import Table from './components/Table/Table'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchDataAsync, filteredDataAction } from './store'
 
@@ -15,7 +16,6 @@ const App = () => {
   useEffect(() => {
     dispatch(filteredDataAction(globalData))
   }, [globalData])
-
 
   return (
     <div className='app'>
